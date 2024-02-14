@@ -136,19 +136,24 @@
 						<div id="mapid" style="height: 500px;"></div>
 						<script>
 							var myMap = L.map('mapid').setView([45.946, -102.272], 13);
-
+						
 							// Existing OpenStreetMap tile layer
 							L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 								attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-								maxZoom: 18,
+								maxZoom: 16, // Make sure you don't zoom beyond the levels you have tiles for
 							}).addTo(myMap);
 							
 							// Your custom tile layer
-							L.tileLayer('https://sambower-atmo.github.io/spatial-data/tiles/{z}/{x}/{y}.png', {
+							L.tileLayer('https://sambower-atmo.github.io/tiles/{z}/{x}/{y}.png', {
 								attribution: 'Your attribution here',
-								maxZoom: 18, // Adjust based on the max zoom level of your tiles
+								maxZoom: 16, // Make sure this matches the highest zoom level of your tiles
+								// Add errorTileUrl if you want to display a specific image when a tile fails to load
+								errorTileUrl: 'path/to/your/error/tile.png', 
+								// Add tms: true if your tiles are in TMS format (origin at bottom-left)
+								tms: false
 							}).addTo(myMap);
 						</script>
+						
 						
 					</div>
 					<a href="#four" class="goto-next scrolly">Next</a>
@@ -160,40 +165,40 @@
 				<section id="four" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Accumsan sed tempus adipiscing blandit</h2>
+							<h2>Why AtmoFacts?</h2>
 							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-chart-area"></span>
-									<h3>Backed by 15 years of research</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<h3>Empowering results</h3>
+									<p>You'll be able to look deeper into a research question with data that massively expands the capabilities of your hardware.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-comment"></span>
-									<h3>Does this change anything</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<h3>Technical support</h3>
+									<p>From concept to completion, the AtmoFacts team is here to help on your project.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-flask"></span>
-									<h3>Cubilia cep lobortis</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<h3>Proven</h3>
+									<p>FluxMapper technology is backed by over a decade of scientific research.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-paper-plane"></span>
-									<h3>Non semper interdum</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<h3>Quick results</h3>
+									<p>FluxMapper gives you access to your own instance, so you can be confident that you're first in line.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-file"></span>
-									<h3>Odio laoreet accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<h3>Commited to interoperablility</h3>
+									<p>AtmoFacts actively participates in networks of professionals striving for climate data integration.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-lock"></span>
-									<h3>Massa arcu accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<h3>Own your data</h3>
+									<p>Many licensing options to help make your data <b>yours</b>.</p>
 								</section>
 							</div>
 						</div>
