@@ -126,41 +126,27 @@
 					<a href="#map-section" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!-- Map-section -->
+				<!-- Map-section -->
+			
 				<section id="map-section" class="spotlight style1 bottom">
 					<div class="content">
 						<header>
 							<h2>Try it.</h2>
 							<p>Explore and download our free FluxMapper sample data to see how our technology can empower your project.</p>
 						</header>
-						<div id="mapid" style="height: 500px;"></div>
-						<script>
-							var myMap = L.map('mapid').setView([45.946, -102.272], 13);
+						<!-- Embed the Leaflet map using an iframe -->
+						<iframe src="LeafletMap.html" style="width: 100%; height: 500px; border: none;"></iframe>
 						
-							// Existing OpenStreetMap tile layer
-							L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-								attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-								maxZoom: 16, // Make sure you don't zoom beyond the levels you have tiles for
-							}).addTo(myMap);
-							
-							// Your custom tile layer
-							L.tileLayer('https://sambower-atmo.github.io/tiles/{z}/{x}/{y}.png', {
-								attribution: 'Your attribution here',
-								maxZoom: 16, // Make sure this matches the highest zoom level of your tiles
-								// Add errorTileUrl if you want to display a specific image when a tile fails to load
-								errorTileUrl: 'path/to/your/error/tile.png', 
-								// Add tms: true if your tiles are in TMS format (origin at bottom-left)
-								tms: false
-							}).addTo(myMap);
-						</script>
-						
-						
+						<!-- Download Button -->
+						<div style="margin-top: 20px; text-align: center;">
+							<a href="spatial-data/FM_data.tif" download="SampleData" class="button">Download Sample Data</a>
+						</div>
 					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
+					
 				</section>
-				
 
 
+				<!-- Four -->
 
 				<section id="four" class="wrapper style1 special fade-up">
 					<div class="container">
