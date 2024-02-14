@@ -8,31 +8,47 @@
 	<head>
 
 		<style>
-			
-			.flex-container {
-				display: flex;
-				align-items: center; /* This centers the items vertically */
-				background: none; /* Removes any background if it was previously set */
-			}
+            .flex-container {
+                display: flex;
+                align-items: center; /* This centers the items vertically */
+                background: none; /* Removes any background if it was previously set */
+            }
 
-			.image-container {
-				background: none; /* Ensure there's no background */
-				padding: 10px; /* Optional: adds some space around the image */
-			}
+            .image-container {
+                background: none; /* Ensure there's no background */
+                padding: 10px; /* Optional: adds some space around the image */
+            }
 
-			.image.fit img {
-				width: 100px; /* or any other fixed width */
-				height: auto; /* Keeps the aspect ratio of the image */
-			}
+            .image.fit img {
+                width: 100px; /* or any other fixed width */
+                height: auto; /* Keeps the aspect ratio of the image */
+            }
 
-			.text-container {
-				margin-left: 20px; /* Adds some space between the image and the text */
-				flex-grow: 1; /* Allows the text container to fill the remaining space */
-				/* Add any additional styles for the text here */
-			}
+            .text-container {
+                margin-left: 20px; /* Adds some space between the image and the text */
+                flex-grow: 1; /* Allows the text container to fill the remaining space */
+                /* Add any additional styles for the text here */
+            }
 
+            /* Responsive styles for screens with a max-width of 768px */
+            @media (max-width: 768px) {
+                .flex-container {
+                    flex-direction: column; /* Stack flex children vertically */
+                    text-align: center; /* Center the text for a better mobile view */
+                }
 
-		  </style>
+                .image-container,
+                .text-container {
+                    margin-left: 0;
+                    margin-right: 0;
+                    width: 100%; /* Full width */
+                }
+
+                .text-container {
+                    margin-top: 20px; /* Adds some space between the image and the text */
+                }
+            }
+        </style>
 		<title>AtmoFacts Team</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
