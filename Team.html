@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Landed by HTML5 UP
+	Arcana by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -49,36 +49,67 @@
                 }
             }
         </style>
-		<title>AtmoFacts Team</title>
+
+		<style>
+						#header {
+			padding: 1em 0 0 0; /* Adjust the top padding as needed */
+			}
+
+
+			#logo {
+				display: block; /* Makes the logo container a block element */
+				max-height: 100px; /* Adjust based on your desired size */
+				width: auto; /* Maintain aspect ratio */
+				overflow: hidden; /* Ensures the logo doesn't overflow its container */
+			}
+
+			@media screen and (max-width: 736px) { /* Adjusts styles for narrow screens */
+				#logo {
+					max-height: 30px; /* Smaller logo for smaller screens */
+				}
+				
+			}
+		</style>
+		<title>About Us</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
+
 	<body class="is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-			<header id="header">
-				<h1 id="logo"><a href="index.html">AtmoFacts</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li>
-							<a href="#">About Us</a>
+				<div id="header">
+
+					<!-- Logo -->
+					<div id="header">
+						<h1><a href="index.html" id="logo"><img src="images/full-color-logo-FINAL.png" alt="AtmoFacts Logo" style="height: 3em; width: auto;"></a></h1>
+					</div>
+						
+					<!-- Nav -->
+						<nav id="nav">
 							<ul>
-								<li><a href="index.html#banner">Our Mission</a></li>
-								<li><a href="index.html#three">How it works</a></li>
-								<li><a href="Team.html">Team</a></li>
-								<li><a href="past-projects.html">Past Projects</a></li>
-								<li><a href="index.html#map-section">Data</a></li>
-								<li><a href="FAQs.html">FAQs</a></li>
+								<li><a href="index.html">Home</a></li>
+								<li class = "current">
+									<a href="about-us.html">About Us</a>
+									<ul>
+										<li><a href="#">Our Story</a></li>
+										<li><a href="#">Impacts</a></li>
+										<li><a href="#">Team</a></li>
+										<li><a href="#">FAQs</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">Tools</a></li>
+								<li><a href="right-sidebar.html">Data Portal</a></li>
+								<li><a href="explore-FM-data.html">FluxMapper</a></li>
 							</ul>
-						</li>
-						<li><a href="fluxmapper.html" class="button primary">FluxMapper</a></li>
-					</ul>
-				</nav>
-			</header>
+						</nav>
+
+				</div>
+
 
 			<!-- Main -->
 				<div id="main" class="wrapper style1">
@@ -121,29 +152,82 @@
 				</div>
 
 			<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/sam-j-bower/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/AtmoFacts" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="info@atmofacts.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; AtmoFacts. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Links to Stuff</h3>
+							<ul class="links">
+								<li><a href="#">Mattis et quis rutrum</a></li>
+								<li><a href="#">Suspendisse amet varius</a></li>
+								<li><a href="#">Sed et dapibus quis</a></li>
+								<li><a href="#">Rutrum accumsan dolor</a></li>
+								<li><a href="#">Mattis rutrum accumsan</a></li>
+								<li><a href="#">Suspendisse varius nibh</a></li>
+								<li><a href="#">Sed et dapibus mattis</a></li>
+							</ul>
+						</section>
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>More Links to Stuff</h3>
+							<ul class="links">
+								<li><a href="#">Duis neque nisi dapibus</a></li>
+								<li><a href="#">Sed et dapibus quis</a></li>
+								<li><a href="#">Rutrum accumsan sed</a></li>
+								<li><a href="#">Mattis et sed accumsan</a></li>
+								<li><a href="#">Duis neque nisi sed</a></li>
+								<li><a href="#">Sed et dapibus quis</a></li>
+								<li><a href="#">Rutrum amet varius</a></li>
+							</ul>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<h3>Get In Touch</h3>
+							<form>
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobilep">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-mobilep">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
 
+				<!-- Icons -->
+					<ul class="icons">
+						
+						<li><a href="https://www.linkedin.com/company/atmofacts/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/AtmoFacts" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<!--<li><a href="info@atmofacts.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
 
-		</div>
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; AtmoFacts 2024. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			</div>
 
-	</body>
+	</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
 </html>

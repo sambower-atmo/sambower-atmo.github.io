@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+
+		<style>
+            .flex-container {
+                display: flex;
+                align-items: center; /* This centers the items vertically */
+                background: none; /* Removes any background if it was previously set */
+            }
+
+            .image-container {
+                background: none; /* Ensure there's no background */
+                padding: 10px; /* Optional: adds some space around the image */
+            }
+
+            .image.fit img {
+                width: 100px; /* or any other fixed width */
+                height: auto; /* Keeps the aspect ratio of the image */
+            }
+
+            .text-container {
+                margin-left: 20px; /* Adds some space between the image and the text */
+                flex-grow: 1; /* Allows the text container to fill the remaining space */
+                /* Add any additional styles for the text here */
+            }
+
+            /* Responsive styles for screens with a max-width of 768px */
+            @media (max-width: 768px) {
+                .flex-container {
+                    flex-direction: column; /* Stack flex children vertically */
+                    text-align: center; /* Center the text for a better mobile view */
+                }
+
+                .image-container,
+                .text-container {
+                    margin-left: 0;
+                    margin-right: 0;
+                    width: 100%; /* Full width */
+                }
+
+                .text-container {
+                    margin-top: 20px; /* Adds some space between the image and the text */
+                }
+            }
+        </style>
+
+		<style>
+						#header {
+			padding: 1em 0 0 0; /* Adjust the top padding as needed */
+			}
+
+
+			#logo {
+				display: block; /* Makes the logo container a block element */
+				max-height: 100px; /* Adjust based on your desired size */
+				width: auto; /* Maintain aspect ratio */
+				overflow: hidden; /* Ensures the logo doesn't overflow its container */
+			}
+
+			@media screen and (max-width: 736px) { /* Adjusts styles for narrow screens */
+				#logo {
+					max-height: 30px; /* Smaller logo for smaller screens */
+				}
+				
+			}
+		</style>
+		<title>About Us</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+					<div id="header">
+						<h1><a href="index.html" id="logo"><img src="images/full-color-logo-FINAL.png" alt="AtmoFacts Logo" style="height: 3em; width: auto;"></a></h1>
+					</div>
+						
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current">
+									<a href="about-us.html">About Us</a>
+									<ul>
+										<li><a href="about-us.html#story">Our Story</a></li>
+										<li><a href="about-us.html#impacts">Impacts</a></li>
+										<li><a href="about-us.html#team">Team</a></li>
+										<li><a href="about-us.html#faqs">FAQs</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">Tools</a></li>
+								<li><a href="right-sidebar.html">Data Portal</a></li>
+								<li><a href="explore-FM-data.html">FluxMapper</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+
+
+				<!-- Our Story -->
+				<section id="story">
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Our Story</h2>
+							<p>A story of atmofacts and fluxmapper to help explain the science</p>
+						</header>
+				<!--	<div class="flex-container">
+						<div class="image-container">
+							<img src="images/stefan.jpg" alt="" style="width: 200px; height: auto;">
+						</div>
+						<div class="text-container">
+							<h3>Founder, Surface-Atmosphere Steward</h3>
+							<h4>Stefan Metzger, PhD.</h4>
+							<p>Your text goes here...</p>
+						</div>
+					</div>
+					<div class="flex-container">
+						<div class="image-container">
+							<img src="images/sam.jpg" alt="" style="width: 200px; height: auto;">
+						</div>
+						<div class="text-container">
+							<h3>Geospatial Coordinator</h3>
+							<h4>Sam Bower</h4>
+							<p>3+ years of experience in earth science and geospatial technologies. Sam recieved a B.A. in Geology from Colorado College and M.S. in Geology from West Virginia University. He enjoys data visualizations, climate science and the outdoors. </p>
+						</div> -->
+					</div>
+				</div>
+				</section>
+
+
+				<!-- Impacts -->
+				<section id="impacts">
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Impacts</h2>
+							<p>AtmoFacts is active in these communities</p>
+						</header>
+					<!--<div class="flex-container">
+						<div class="image-container">
+							<img src="images/stefan.jpg" alt="" style="width: 200px; height: auto;">
+						</div>
+						<div class="text-container">
+							<h3>Founder, Surface-Atmosphere Steward</h3>
+							<h4>Stefan Metzger, PhD.</h4>
+							<p>Your text goes here...</p>
+						</div>
+					</div>
+					<div class="flex-container">
+						<div class="image-container">
+							<img src="images/sam.jpg" alt="" style="width: 200px; height: auto;">
+						</div>
+						<div class="text-container">
+							<h3>Geospatial Coordinator</h3>
+							<h4>Sam Bower</h4>
+							<p>3+ years of experience in earth science and geospatial technologies. Sam recieved a B.A. in Geology from Colorado College and M.S. in Geology from West Virginia University. He enjoys data visualizations, climate science and the outdoors. </p>
+						</div>-->
+					</div>
+				</div> 
+				</section>
+
+
+				<!-- Team -->
+				<section id="team">
+					<div id="main" class="wrapper style1">
+						<div class="container">
+							<header class="major">
+								<h2>AtmoFacts team</h2>
+								<p>We are a small startup in the Boulder area of Colorado. Our team is small, local and engaged in the scientific community.</p>
+					</header>
+						<div class="flex-container">
+							<div class="image-container">
+								<img src="images/stefan.jpg" alt="" style="width: 200px; height: auto;">
+							</div>
+							<div class="text-container">
+								<h3>Founder, Surface-Atmosphere Steward</h3>
+								<h4>Stefan Metzger, PhD.</h4>
+								<p>Your text goes here...</p>
+							</div>
+						</div>
+						<div class="flex-container">
+							<div class="image-container">
+								<img src="images/sam.jpg" alt="" style="width: 200px; height: auto;">
+							</div>
+							<div class="text-container">
+								<h3>Geospatial Coordinator</h3>
+								<h4>Sam Bower</h4>
+								<p>3+ years of experience in earth science and geospatial technologies. Sam recieved a B.A. in Geology from Colorado College and M.S. in Geology from West Virginia University. He enjoys data visualizations, climate science and the outdoors. </p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<!-- Faqs -->
+				<section id="faqs">
+					<div id="main" class="wrapper style1">
+						<div class="container">
+							<header class="major">
+								<h2>Frequently Asked Questions</h2>
+								<p>list of some questions that can point users to links such as 'tools' and 'data explorer'</p>
+							</header>
+					<!-- 	<div class="flex-container">
+							<div class="image-container">
+								<img src="images/stefan.jpg" alt="" style="width: 200px; height: auto;">
+							</div>
+							<div class="text-container">
+								<h3>Founder, Surface-Atmosphere Steward</h3>
+								<h4>Stefan Metzger, PhD.</h4>
+								<p>Your text goes here...</p>
+							</div>
+						</div>
+						<div class="flex-container">
+							<div class="image-container">
+								<img src="images/sam.jpg" alt="" style="width: 200px; height: auto;">
+							</div>
+							<div class="text-container">
+								<h3>Geospatial Coordinator</h3>
+								<h4>Sam Bower</h4>
+								<p>3+ years of experience in earth science and geospatial technologies. Sam recieved a B.A. in Geology from Colorado College and M.S. in Geology from West Virginia University. He enjoys data visualizations, climate science and the outdoors. </p>
+							</div>-->
+						</div>
+					</div>
+					</section>
+
+			</div>
+		</div>
+
+			<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Links to Stuff</h3>
+							<ul class="links">
+								<li><a href="#">Mattis et quis rutrum</a></li>
+								<li><a href="#">Suspendisse amet varius</a></li>
+								<li><a href="#">Sed et dapibus quis</a></li>
+								<li><a href="#">Rutrum accumsan dolor</a></li>
+								<li><a href="#">Mattis rutrum accumsan</a></li>
+								<li><a href="#">Suspendisse varius nibh</a></li>
+								<li><a href="#">Sed et dapibus mattis</a></li>
+							</ul>
+						</section>
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>More Links to Stuff</h3>
+							<ul class="links">
+								<li><a href="#">Duis neque nisi dapibus</a></li>
+								<li><a href="#">Sed et dapibus quis</a></li>
+								<li><a href="#">Rutrum accumsan sed</a></li>
+								<li><a href="#">Mattis et sed accumsan</a></li>
+								<li><a href="#">Duis neque nisi sed</a></li>
+								<li><a href="#">Sed et dapibus quis</a></li>
+								<li><a href="#">Rutrum amet varius</a></li>
+							</ul>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<h3>Get In Touch</h3>
+							<form>
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobilep">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-mobilep">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+	
+						<!-- Icons -->
+							<ul class="icons">
+								
+								<li><a href="https://www.linkedin.com/company/atmofacts/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/AtmoFacts" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<!--<li><a href="info@atmofacts.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
+	
+						<!-- Copyright -->
+							<div class="copyright">
+								<ul class="menu">
+									<li>&copy; AtmoFacts 2024. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+	
+					</div>
+	
+			</div>
+	
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.dropotron.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
+	
+		</body>
+	</html>
