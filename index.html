@@ -10,6 +10,26 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#header {
+			padding: 1em 0 0 0; /* Adjust the top padding as needed */
+			}
+
+
+			#logo {
+				display: block; /* Makes the logo container a block element */
+				max-height: 100px; /* Adjust based on your desired size */
+				width: auto; /* Maintain aspect ratio */
+				overflow: hidden; /* Ensures the logo doesn't overflow its container */
+			}
+
+			@media screen and (max-width: 700px) { /* Adjusts styles for narrow screens */
+				#logo {
+					max-height: 50px; /* Smaller logo for smaller screens */
+				}
+			}
+
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -18,35 +38,26 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html" id="logo">AtmoFacts</a></h1>
-
+					<div id="header">
+						<h1><a href="index.html" id="logo"><img src="images/full-color-logo-FINAL.png" alt="AtmoFacts Logo" style="height: 3em; width: auto;"></a></h1>
+					</div>
+						
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
 								<li>
-									<a href="#">Dropdown</a>
+									<a href="#">About Us</a>
 									<ul>
-										<li><a href="#">Lorem dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam sed tempus</a></li>
-										<li>
-											<a href="#">Submenu</a>
-											<ul>
-												<li><a href="#">Lorem dolor</a></li>
-												<li><a href="#">Phasellus magna</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam nisl</a></li>
-												<li><a href="#">Veroeros feugiat</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
+										<li><a href="#">Our Story</a></li>
+										<li><a href="#">Impacts</a></li>
+										<li><a href="#">Team</a></li>
+										<li><a href="#">FAQs</a></li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="two-sidebar.html">Two Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="left-sidebar.html">Tools</a></li>
+								<li><a href="right-sidebar.html">Data Portal</a></li>
+								<li><a href="explore-FM-data.html">FluxMapper</a></li>
 							</ul>
 						</nav>
 
@@ -55,7 +66,7 @@
 			<!-- Banner -->
 				<section id="banner">
 					<header>
-						<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
+						<h2>FluxMapper™ <em>Quantify emissions. Visualize impact. </em></h2>
 						<a href="#" class="button">Learn More</a>
 					</header>
 				</section>
@@ -66,14 +77,14 @@
 						<div class="row gtr-200">
 							<section class="col-4 col-12-narrower">
 								<div class="box highlight">
-									<i class="icon solid major fa-paper-plane"></i>
+									<i class="icon solid alt major fa-chart-area"></i>
 									<h3>This Is Important</h3>
 									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
 								</div>
 							</section>
 							<section class="col-4 col-12-narrower">
 								<div class="box highlight">
-									<i class="icon solid major fa-pencil-alt"></i>
+									<i class="icon solid alt major fa-flask"></i>
 									<h3>Also Important</h3>
 									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
 								</div>
@@ -209,17 +220,15 @@
 
 					<!-- Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
-						</ul>
+							
+							<li><a href="https://www.linkedin.com/company/atmofacts/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/AtmoFacts" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<!--<li><a href="info@atmofacts.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
 
 					<!-- Copyright -->
 						<div class="copyright">
 							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; AtmoFacts 2024. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 
