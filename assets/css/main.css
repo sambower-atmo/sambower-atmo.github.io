@@ -2975,9 +2975,9 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
-				display: none;
-			}
+		#header {
+			display: none;
+		}
 
 		/* Banner */
 
@@ -3066,9 +3066,10 @@ input, select, textarea {
 				background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-				height: 44px;
+				height: 54px;
 				line-height: 44px;
 				box-shadow: 0 4px 0 0 #0b529e;
+				padding-top: 5px;
 			}
 
 				#titleBar .title {
