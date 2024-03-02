@@ -100,7 +100,7 @@
 										<li><a href="about-us.html#impacts">Impacts</a></li>
 										<li><a href="about-us.html#team">Team</a></li>
 										<li><a href="about-us.html#faqs">FAQs</a></li>
-										<li><a href="about-us.html#contact">FAQs</a></li>
+										<li><a href="about-us.html#contact">Join</a></li>
 									</ul>
 								</li>
 								<li><a href="left-sidebar.html">Tools</a></li>
@@ -282,37 +282,59 @@
 			</div>
 		</div>
 
-			<!-- Footer -->
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<section class="col-3 col-6-narrower col-12-mobilep">
-							<h3>Links to Stuff</h3>
-							<ul class="links">
-								<li><a href="#">Mattis et quis rutrum</a></li>
-								<li><a href="#">Suspendisse amet varius</a></li>
-								<li><a href="#">Sed et dapibus quis</a></li>
-								<li><a href="#">Rutrum accumsan dolor</a></li>
-								<li><a href="#">Mattis rutrum accumsan</a></li>
-								<li><a href="#">Suspendisse varius nibh</a></li>
-								<li><a href="#">Sed et dapibus mattis</a></li>
-							</ul>
-						</section>
-						<section class="col-3 col-6-narrower col-12-mobilep">
-							<h3>More Links to Stuff</h3>
-							<ul class="links">
-								<li><a href="#">Duis neque nisi dapibus</a></li>
-								<li><a href="#">Sed et dapibus quis</a></li>
-								<li><a href="#">Rutrum accumsan sed</a></li>
-								<li><a href="#">Mattis et sed accumsan</a></li>
-								<li><a href="#">Duis neque nisi sed</a></li>
-								<li><a href="#">Sed et dapibus quis</a></li>
-								<li><a href="#">Rutrum amet varius</a></li>
-							</ul>
-						</section>
-						
-					</div>
-				</div>
+				<!-- Footer -->
+
+				<style>
+					#footer .container {
+					display: flex;
+					justify-content: center; /* Center the content horizontally */
+					text-align: center; /* Center the text within the section */
+				}
+	
+				#footer .row {
+					flex: 1 0 auto; /* Take up the available space */
+					display: flex;
+					justify-content: center; /* Center the sections within the row */
+					flex-wrap: wrap; /* Allow items to wrap as needed */
+				}
+	
+				#footer section {
+					flex: 0 1 100%; /* Start with full width, allow shrinking */
+					max-width: 600px; /* Limit the maximum width to prevent it from becoming too wide */
+				}
+	
+				#footer .links {
+					padding: 0;
+					list-style: none; /* Remove bullet points */
+					display: inline-block; /* Center the list */
+				}
+	
+				@media (max-width: 768px) {
+					#footer section {
+						flex-basis: 100%; /* Allow the section to take full width on small screens */
+					}
+				}
+	
+				</style>
+					<div id="footer">
+						<div class="container">
+							<div class="row">
+								<section class="col-3 col-6-narrower col-12-mobilep">
+									<h3>Links to Stuff</h3>
+									<ul class="links">
+										<li><a href="#">Mattis et quis rutrum</a></li>
+										<li><a href="#">Suspendisse amet varius</a></li>
+										<li><a href="#">Sed et dapibus quis</a></li>
+										<li><a href="#">Rutrum accumsan dolor</a></li>
+										<li><a href="#">Mattis rutrum accumsan</a></li>
+										<li><a href="#">Suspendisse varius nibh</a></li>
+										<li><a href="#">Sed et dapibus mattis</a></li>
+									</ul>
+								</section>
+	
+								
+							</div>
+						</div>
 	
 						<!-- Icons -->
 							<ul class="icons">
@@ -331,7 +353,7 @@
 					</div>
 	
 			</div>
-	
+
 			<!-- Scripts -->
 				<script src="assets/js/jquery.min.js"></script>
 				<script src="assets/js/jquery.dropotron.min.js"></script>
