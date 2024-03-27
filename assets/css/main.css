@@ -2564,8 +2564,8 @@ input, select, textarea {
 			content: '';
 			display: block;
 			width: 100%;
-			height: 0.75em;
-			background-color: rgb(255, 255, 255);
+			height: 7px;
+			background-color: rgb(90, 90, 90); /* color of small bar below nav bar */
 			background-image: url("images/bg01.png");
 		}
 
@@ -2612,7 +2612,7 @@ input, select, textarea {
 						bottom: -0.5em;
 						left: 50%;
 						margin-left: -0.375em;
-						background-color: rgb(255, 254, 254);
+						background-color: rgb(90, 90, 90); /* little diamond on nav bar */
 						background-image: url("images/bg01.png");
 					}
 
@@ -2678,8 +2678,9 @@ input, select, textarea {
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
-		text-align: center;
+		text-align: left;
 		position: relative;
+		border-bottom: 7px solid rgba(90, 90, 90); /* Thin grey bar */
 	}
 
 		#banner header {
@@ -2689,20 +2690,20 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			background: #212121;
-			background: rgba(27, 27, 27, 0.75);
+			background: rgba(27, 27, 27, 0.8);
 			color: #fff;
-			padding: 1.5em 0;
+			padding: 1.5em 4em 1.5em 3em;
 		}
 
 			#banner header h2 {
 				display: inline-block;
 				margin: 0;
-				font-size: 1.25em;
+				font-size: 1.75em;
 				vertical-align: middle;
 			}
 
 				#banner header h2 em {
-					opacity: 0.75;
+					opacity: 1;
 				}
 
 				#banner header h2 a {
@@ -2714,8 +2715,8 @@ input, select, textarea {
 					}
 
 			#banner header .button {
-				vertical-align: middle;
-				margin-left: 1em;
+				vertical-align: sub;
+				padding-left: 1.5;
 			}
 
 /* Wrapper */
@@ -2723,6 +2724,67 @@ input, select, textarea {
 	.wrapper {
 		padding: 5em 0 3em 0;
 	}
+
+		.wrapper.styleimg {
+			position: relative;
+			background-position: right;
+			background-size: 150%;
+			border-bottom: 3px solid rgba(90,90,90);
+			padding-bottom: 2em;
+			color: #fff;
+		}
+
+			.wrapper.styleimg::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(27,27,27,0.8); /* Adjust the last value to control transparency */
+				z-index: 1;
+			}
+			.wrapper.styleimg > * {
+				position: relative; /* Makes content appear above the overlay */
+				z-index: 2;
+			}
+
+			.wrapper.styleimg .container {
+				max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+			}
+			
+			.wrapper.styleimg .image-row {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center; /* Centers the items */
+			}
+			
+			.wrapper.styleimg .image-container {
+				flex: 1 0 calc(33.33% - 20px); /* Adjust to fit 3 per row, accounting for margin */
+				box-sizing: border-box;
+				margin: 10px; /* Provides space between images */
+				display: flex;
+				justify-content: center; /* Center the image horizontally */
+				align-items: center; /* Center the image vertically */
+				height: 150px; /* Set a fixed height */
+			}
+			
+			.wrapper.styleimg .image-container img {
+				max-width: 100%; /* Ensure image does not exceed its container's width */
+				max-height: 100%; /* Ensures image does not exceed the container's height */
+				width: auto; /* Maintains aspect ratio */
+				height: auto; /* Maintains aspect ratio */
+			}
+			
+			
+			
+
+		.wrapper.style0 {
+			border-bottom: 3px solid rgba(90,90,90);
+			padding-bottom: 2em;
+			background: #363636;
+			color: #fff;
+		}
 
 		.wrapper.style1 {
 			background: #fff;
@@ -2753,6 +2815,31 @@ input, select, textarea {
 				.wrapper.style3 .button:hover {
 					color: #ed7124ff !important;
 				}
+		.wrapper.style4 {
+			background-color: #363636; 
+			padding-top: 40px;
+			padding-bottom: 10px;
+			
+		}
+		
+			.wrapper.style4 .container img {
+				display: block; 
+				margin: 0 auto; 
+				height: auto;
+				max-width: 100%;
+			}
+
+			.wrapper.style4 header {
+				text-align: center; /* Centers the header content */
+				color: #fff; /* Sets the header text color to white */
+			}
+			
+			.wrapper.style4 header h2 {
+				color: #fff; /* Ensures the h2 text is also white, in case the header rule is not sufficient */
+				/* If you have other styling rules for h2 that might affect alignment or color, ensure they're overridden or removed accordingly */
+			}
+			
+				
 
 /* CTA */
 
@@ -2779,7 +2866,7 @@ input, select, textarea {
 	}
 
 		#footer a {
-			color: inherit;
+			color: #999; /* inherit */
 			border-bottom-color: rgba(71, 71, 71, 0.25);
 		}
 
@@ -2802,7 +2889,7 @@ input, select, textarea {
 			}
 
 				#footer .icons a:hover {
-					color: #474747;
+					color: #ed7124ff;
 				}
 
 		#footer .copyright {
@@ -2983,7 +3070,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				height: 20em;
+				height: 22em;
 			}
 
 				#banner header h2 {
@@ -3056,7 +3143,7 @@ input, select, textarea {
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				height: 44px;
+				height: 60px;
 				left: 0;
 				position: fixed;
 				top: 0;
@@ -3067,9 +3154,9 @@ input, select, textarea {
 				background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-				height: 54px;
+				height: 60px;
 				line-height: 44px;
-				box-shadow: 0 4px 0 0 rgb(255, 255, 255);
+				box-shadow: 0 4px 0 0 rgb(90,90,90);
 				padding-top: 5px;
 			}
 
@@ -3277,7 +3364,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				height: 18em;
+				height: 22em;
 			}
 
 		/* Wrapper */
@@ -3333,7 +3420,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				height: 20em;
+				height: 24em;
 			}
 
 				#banner header {
