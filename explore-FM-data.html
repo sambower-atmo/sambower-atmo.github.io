@@ -10,41 +10,19 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-			#header {
-			padding: 1em 0 0 0; /* Adjust the top padding as needed */
-			}
+		<script src="https://kit.fontawesome.com/e30267d4ae.js" crossorigin="anonymous"></script>
 
-
-			#logo {
-				display: block; /* Makes the logo container a block element */
-				max-height: 100px; /* Adjust based on your desired size */
-				width: auto; /* Maintain aspect ratio */
-				overflow: hidden; /* Ensures the logo doesn't overflow its container */
-			}
-
-			@media screen and (max-width: 700px) { /* Adjusts styles for narrow screens */
-				#logo {
-					max-height: 50px; /* Smaller logo for smaller screens */
-				}
-			}
-
-
-		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<div id="header">
-
-					<!-- Logo -->
-					<div id="header">
-						<h1><a href="index.html" id="logo"><img src="images/full-color-logo-FINAL.png" alt="AtmoFacts Logo" style="height: 3em; width: auto;"></a></h1>
-					</div>
-						
-					<!-- Nav -->
-					<!-- Nav -->
+			<div id="header">
+				<h1>
+					<a href="index.html" id="logo">
+						<img src="images/full-color-logo-FINAL.png" alt="AtmoFacts Logo" style="max-height: 50px; width: auto;">
+					</a>
+				</h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
@@ -52,21 +30,100 @@
 								<a href="about-us.html">About Us</a>
 								<ul>
 									<li><a href="about-us.html#story">Our Story</a></li>
-									<li><a href="about-us.html#impacts">Impacts</a></li>
 									<li><a href="about-us.html#team">Team</a></li>
-									<li><a href="contact.html">Contact</a></li>								</ul>
+								</ul>
 							</li>
 							<li class="current"><a href="explore-FM-data.html">Technology</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li ><a href="impacts.html">Impacts</a></li>
 						</ul>
 					</nav>
-
 			</div>
 
-				</div>
+			<!-- Intro -->
+			<section id="intro" class="wrapper style0">
+				<div class="container">
+					<header>
+						<h2>Our technology</h2>
+						<div style="text-align: center; margin-bottom: 50px; margin-top: 20px;">
+							<i class="fa-solid fa-lightbulb" style="font-size: 48px; color: #fec862ff;"></i>
+						</div>
+						<p style="color: #fff;"> At our core, we are a software company. The raw data our tools work on is user-provided.
+							 Explore the options we currently offer, and stay tuned for new technologies in the future. 
+						</p>
+					</header>
+				</div>	
+			</section>
   
 
-			<!-- Main -->
-				<section class="wrapper style0">
+			<!-- Selector -->
+			<section class="wrapper styleimg" style="background-image: url('images/viridis.png');" >
+				<div class="container">
+					<div class="row gtr-200 justify-center">
+						<section class="col-4 col-12-narrower">
+							<div class="box highlight">
+								<i class="icon solid alt major fa-wrench"></i>
+								<h3>Flux Mapping as-a-Service</h3>
+								<p>Want FluxMapper™ tailored to your needs? We offer full custom work packages for your project upon request. </p>
+							</div>
+							<div style="text-align: center;">
+								<a href="#FMaaS" class="button">Learn More</a>
+							</div>
+						</section>
+						<section class="col-4 col-12-narrower">
+							<div class="box highlight">
+								<i class="icon solid alt major fa-computer"></i>
+								<h3>FluxMapper™ On-demand</h3>
+								<p>Run FluxMapper™ from a virtual machine with raw data of your choice. </p>
+							</div>
+							<div style="text-align: center;">
+								<a href="#map-section" class="button">Learn More</a>
+							</div>
+						</section>
+						<section class="col-4 col-12-narrower">
+							<div class="box highlight">
+								<i class="icon solid alt major fa-layer-group"></i>
+								<h3>Existing Data Portal</h3>
+								<p>Don't know what you need yet? See what FluxMap™ data is already pubicly available.</p>
+							</div>
+							<div style="text-align: center;">
+								<a href="explore-FM-data.html" class="button">Learn More</a>
+							</div>
+						</section>
+					</div>
+					
+				</div>
+			</section>
+
+			<!-- FluxMapper as a service -->
+			<section id="FMaaS" class="wrapper style0">
+				<div class="container">
+					<header>
+						<h2>FluxMapper-as-a-Service</h2>
+						<p style="color: #fff;">
+							The traditional method of using our technology. FMaaS is customizable, but typically involves the following:
+						</p>
+						<ul>
+							<li>Project management</li>
+							<li>Project planning and setup, including technical and specific data details</li>
+							<li>Processing, performance monitoring and troubleshooting</li>
+							<li>Data interpretation and visualizations</li>
+						</ul>
+						<p></p>
+						<p style="color: #fff;">
+							Please contact us for information, quotes and other inquiries.
+						</p>
+					</header>
+					<div style="text-align: center;">
+						<a href="contact.html" class="button">Learn More</a>
+					</div>
+					
+				</div>	
+			</section>
+
+
+			<!-- FluxMapper on demand -->
+				<section id="map-section" class="wrapper style0">
 					<div class="container">
 						<div id="content">
 
@@ -80,7 +137,7 @@
 
 									<!-- <span class="image featured"><img src="images/banner.jpg" alt="" /></span> -->
 									<!-- Map-section -->
-									<section id="map-section" class="spotlight style1 bottom">
+									<section class="spotlight style1 bottom">
 										<div class="content">
 										<!-- Embed the Leaflet map using an iframe -->
 										<iframe src="LeafletMap.html" style="width: 100%; height: 500px; border: none;"></iframe>
@@ -98,13 +155,14 @@
 									like to explore further!</p>
 								
 									<!-- Gif -->	
-									<section id="'downloaddata" class="spotlight style1 bottom">
+									<!--<section id="'downloaddata" class="spotlight style1 bottom">
 										<h4 style="text-align: center;">Explore this sample dataset, and download to see how a FluxMap™ can empower your project.</h4>
 										<div style="margin-top: 20px; text-align: center; display: flex; align-items: center; justify-content:center;">
 										<img src="images/F_CO2_v2.gif" alt="Download Animation" style="margin-right: 20px;">
 										<a href="spatial-data/FM_data.tif" download="SampleData" class="button">Download Sample Data</a>
 										</div>
-									</section>
+									</section>-->
+
 								</article>
 
 						</div>
@@ -151,11 +209,11 @@
 							<section class="col-3 col-6-narrower col-12-mobilep">
 								<h3 style="color: #999;" >AtmoFacts</h3>
 								<ul class="links">
-									<li><a href="#">Our Technology</a></li>
-									<li><a href="#">Case Studies</a></li>
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Contact</a></li>
-									<li><a href="#">Legal Notice</a></li>
+									<li><a href="explore-FM-data.html">Our Technology</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="about-us.html">About Us</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="legal.html">Legal Notice</a></li>
 								</ul>
 							</section>
 
