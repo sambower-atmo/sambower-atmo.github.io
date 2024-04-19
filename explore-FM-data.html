@@ -51,9 +51,10 @@
 						<div style="text-align: center; margin-bottom: 50px; margin-top: 20px;">
 							<i class="fa-solid fa-lightbulb" style="font-size: 48px; color: #fec862ff;"></i>
 						</div>
-						<p style="color: #fff;"> At our core, we are a software company. In your technology stack, FluxMapper™ fits in between your direct measurement 
-							hardware and your data interpretations.
-							 Explore the options we currently offer, and stay tuned for new technologies in the future. 
+						<p > At our core, we are a software company. In your technology stack, FluxMapper™ seamlessly integrates between your direct measurement 
+							hardware and your final data application - whether it's MRV for carbon credits, monitoring oil and gas leaks, providing ground truth for biogeochemical models,
+							 studying the carbon cycle, or any other application you envision.
+							 Explore the options we currently offer and stay tuned for new technologies on the horizon. 
 						</p>
 					</header>
 				</div>	
@@ -64,7 +65,7 @@
 			<section class="wrapper styleimg" style="background-image: url('images/viridis.png');" >
 				<div class="container">
 					<div class="row gtr-200 justify-center">
-						<section class="col-4 col-12-narrower">
+						<section class="col-6 col-12-narrower">
 							<div class="box highlight">
 								<i class="icon solid alt major fa-wrench"></i>
 								<h3>Flux Mapping as-a-Service</h3>
@@ -74,24 +75,14 @@
 								<a href="#FMaaS" class="button">Learn More</a>
 							</div>
 						</section>
-						<section class="col-4 col-12-narrower">
+						<section class="col-6 col-12-narrower">
 							<div class="box highlight">
 								<i class="icon solid alt major fa-computer"></i>
-								<h3>FluxMapper™ On-demand - coming soon</h3>
+								<h3>FluxMapper™ On-demand <em style="color:coral">(coming soon)</em></h3>
 								<p>Run FluxMapper™ from a virtual machine with raw data of your choice. </p>
 							</div>
 							<div style="text-align: center;">
 								<a href="#map-section" class="button">Learn More</a>
-							</div>
-						</section>
-						<section class="col-4 col-12-narrower">
-							<div class="box highlight">
-								<i class="icon solid alt major fa-layer-group"></i>
-								<h3>Data Portal - coming soon</h3>
-								<p>Don't know what you need yet? See what FluxMap™ data is already publicly available.</p>
-							</div>
-							<div style="text-align: center;">
-								<a href="#data-portal" class="button">Learn More</a>
 							</div>
 						</section>
 					</div>
@@ -104,17 +95,19 @@
 				<div class="container">
 					<header>
 						<h2>FluxMapper-as-a-Service</h2>
-						<p style="color: #fff;">
-							The traditional method of using our technology. FMaaS is customizable, but typically involves the following:
+						<p >
+							The traditional method of deploying our technology. We offer a range of use case-specific pricing tiers for your project.
+							FMaaS is customizable, but typically involves the following:
 						</p>
-						<ul>
+						</p>
+						<ul style="color:#999 ;">
 							<li>Project management</li>
 							<li>Project planning and setup, including technical and specific data details</li>
 							<li>Processing, performance monitoring and troubleshooting</li>
 							<li>Data interpretation and visualizations</li>
 						</ul>
 						<p></p>
-						<p style="color: #fff;">
+						<p >
 							Please contact us for information, quotes and other inquiries.
 						</p>
 					</header>
@@ -159,7 +152,13 @@
 								<article>
 									<header>
 										<h2>Stay tuned for FluxMapper™ on-demand.</h2>
-										<p style="color: #fff;">We are working on scaling our technology. In the meantime, if you have questions or proposals please contact us! We are always open to collaborations.   </p>
+										<p >We are working on scaling our technology to allow on-demand use of our software on 
+											your raw direct measurement data so that you can use our tech on your own time.
+											
+										<p> We will be demonstrating an initial version of FluxMapper™ on-demand at the
+											 <a href="https://ameriflux.lbl.gov/event/workshop-remote-sensing-and-fluxes-upscaling-for-real-world-impact/">AmeriFlux workshop "Remote Sensing and Fluxes for Real-world Impact"</a>. Sign up here.
+
+										<p>In the meantime, if you have questions or proposals please contact us! We are always open to collaborations.   </p>
 									</header>
 
 
@@ -169,50 +168,86 @@
 					</div>
 				</section>
 
-					<!-- FluxMapper on demand -->
-					<section id="data-portal" class="wrapper style0">
+					<!-- How does it work? -->
+					<section id="how-it-works" class="wrapper style0">
 						<div class="container">
 							<div id="content">
-	
-								<!-- Content -->
-	
-									<article>
-										<header>
-											<h2>Stay tuned for our FluxMap™ data portal.</h2>
-											<p>Any FluxMapper™ data product created with a public data liscense will end up on this 
-												data portal so you can explore what is already available before starting your own project.</p>
-										</header>
-	
-										<!-- <span class="image featured"><img src="images/banner.jpg" alt="" /></span> -->
-										<!-- Map-section -->
-										<section class="spotlight style1 bottom">
-											<div class="content">
-											<!-- Embed the Leaflet map using an iframe -->
-											<iframe src="website-webmap.html" style="width: 100%; height: 500px; border: none;"></iframe>
+								<section class="wrapper style4">
+									<header>
+										<h2 style="text-align: left;">How does our technology work?</h2>
+										<p style="text-align: left;">Remember this movie from before? Let's dive a little deeper so you can understand how AtmoFacts is improving direct measurement science.</p>
+										<div class="container">
+											<img src="images/day6-movie-v2.gif" alt="Your GIF">
+										</div>
+										<div style="text-align: center; margin-bottom: 20px; margin-top: 20px;">
+											<i class="fa-solid fa-arrow-down" style="font-size: 30px; color: #fff;"></i>
+										</div>
+										<div>
+											<p style="margin-top: 0px; text-align: left;">
+												An eddy covarience instrument takes thousands of measurements every second. Each time it takes a measurement, it records
+												the quantity of molecules of a specific variable (such as a greenhouse gas) and the meteorological data at that exact point in time.
+												That is a lot of raw data, so when these 
+												measurements are analyzed, they are typically aggregated into a single value every half-hour or so
+												that represents the average measurement in the view of the instrument. The view of the instrument depends
+												on those meteorological conditions we mentioned before. This is what we see in the left panel 
+												of the movie. 
+											</p>
+											<div style="text-align: center; margin-bottom: 0px; margin-top: 0px;">
+												<i class="fa-solid fa-arrow-down" style="font-size: 30px; color: #fff;"></i>
 											</div>
-										</section>
-	
-										<h3>Try a FluxMap™</h3>
-										<p>Here is an example of a single FluxMap™ that represents a single time-slice from a FluxMapper2™ product. This 
-										is data from a research project ADD LINK TO THE PROJECT HERE. The data for this project all comes from a single flux tower 
-										located at the center of the map. 
-										</p>
-	
-										<p>Explore the map to see the value that FluxMapper™ adds to a flux tower. Turn layers on and off... zoom in and out...
-										satisfy your curiosity. Download the full timeseries of the data below if you would
-										like to explore further!</p>
-									
-										<!-- Gif -->	
-										<!--<section id="'downloaddata" class="spotlight style1 bottom">
-											<h4 style="text-align: center;">Explore this sample dataset, and download to see how a FluxMap™ can empower your project.</h4>
-											<div style="margin-top: 20px; text-align: center; display: flex; align-items: center; justify-content:center;">
-											<img src="images/F_CO2_v2.gif" alt="Download Animation" style="margin-right: 20px;">
-											<a href="spatial-data/FM_data.tif" download="SampleData" class="button">Download Sample Data</a>
+											<p style="margin-top: 20px; text-align: left;">
+												FluxMapper1™ acts like a flashlight in a dark room - illuminating the sources and sinks of target variables within the 
+												view of the instrument. See how in the second panel of the movie you are able to see the spectrum of colors that 
+												correspond to the quantity of the flux? 
+											</p>
+											<div style="text-align: center;">
+												<img src="images/co2-scale.png" alt="" style="max-width: 75%;">
 											</div>
-										</section>-->
-	
-									</article>
-	
+											<p style="margin-top: 20px; text-align: left;">
+												FluxMapper™ uses the high frequency molecular data alongside the weather data to precisely calculate the 
+												locations and magnitudes of sources and sinks of fluxes. Since traditional analysis only provides a single 
+												average value for each time period, FluxMapper1™ already provides the user with orders-of-magnitude more information for the exact same
+												instrument. 
+											</p>
+											<div style="text-align: center; margin-bottom: 0px; margin-top: 0px;">
+												<i class="fa-solid fa-arrow-down" style="font-size: 30px; color: #fff;"></i>
+											</div>
+											<p style="margin-top: 20px; text-align: left;">
+												What you will notice about FluxMapper1™ is that the size and shape of that flashlight view is still limited by the meteorological conditions.
+												<strong>FluxMapper2™ eliminates this issue by turning on all the lights in your study site.</strong> We achieve this by integrating 
+												in-situ processes and remote sensing data with artificial intelligence. FluxMapper2™ extends the view of that same instrument while keeping the 
+												integrity of the results grounded in direct measurements.
+											</p>
+											<h2 style="text-align: left;"> Benefits of our technology</h2>
+											<h3 style="text-align: left;"> Source and sink attribution</h3>
+											<p style="margin-top: 20px; text-align: left;">
+												Identifying areas of high and low emissions is crucial across sectors. Explore the interactive map of carbon dioxide fluxes below
+												to see what a FluxMap™ can tell you about a study site. The data used here is from a past research project using the US-PFa tower dataset
+												in Wisconsin, taken from a 120m tall flux tower
+											</p>
+											<section class="spotlight style1 bottom">
+												<div class="content">
+												<!-- Embed the Leaflet map using an iframe -->
+												<iframe src="website-webmap.html" style="width: 100%; height: 500px; border: none; margin-bottom: 40px;"></iframe>
+												</div>
+											</section>
+											<h3 style="text-align: left;"> Direct measurement integrity</h3>
+											<p style="margin-top: 20px; text-align: left;">
+												Measuring molecules directly eliminates the incompatibilities of complicated proxies and sector-specific techniques. Wide acceptance of
+												direct measurement techniques would lead to a benchmark for greenhouse gas monitoring.
+											</p>
+											<h3 style="text-align: left;"> Economic</h3>
+											<p style="margin-top: 20px; text-align: left;">
+												When it comes to data coverage, one flux tower that uses FluxMapper2™ is about as economic as 10 of the same flux tower without FluxMapper2™. And that is without considering
+												the economic benefits of source and sink attribution. 
+											<h3 style="text-align: left;"> Works on any flux system </h3>
+											<p style="margin-top: 20px; text-align: left;">
+												Towers, aircraft, buoy, or any combination of the above.
+											</p>
+
+										</div>
+									</header>
+								</section>
 							</div>
 						</div>
 					</section>

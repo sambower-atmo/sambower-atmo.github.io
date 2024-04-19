@@ -2796,7 +2796,7 @@ opacity: 1;
 		background-image: url("../../images/viridis.png");
 		background-position: center center;
 		background-size: cover;
-		height: 28em;
+		height: 50em;
 		text-align: left;
 		position: relative;
 		border-bottom: 7px solid rgba(90, 90, 90); /* Thin grey bar */
@@ -3069,7 +3069,7 @@ opacity: 1;
 		/* Banner */
 
 			#banner {
-				height: 20em;
+				height: 25em;
 			}
 
 		/* Wrapper */
